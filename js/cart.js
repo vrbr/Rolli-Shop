@@ -19,7 +19,6 @@ window.addEventListener('click', (event) => {
 
         //проверить если ли уже такой товар в корзине
         const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
-        console.log(itemInCart);
 
         //если товар есть в корзине
         if (itemInCart) {
