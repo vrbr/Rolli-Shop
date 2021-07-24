@@ -1,5 +1,7 @@
+//добавляем прослушку на всем окне
 window.addEventListener('click', (event) => {
 
+    //объявляем переменную для счетчика
     let counter;
 
     //проверяем клик строго по кнопке плюс или минус
@@ -25,6 +27,9 @@ window.addEventListener('click', (event) => {
             //проверка на товар который находится в корзине
              //удаляем товар из корзины
              event.target.closest('.cart-item').remove();
+
+            //отображение статуса корзины: пустая / полная
+            toggleCartStatus();
         }
     }
 });
