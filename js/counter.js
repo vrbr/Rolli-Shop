@@ -32,13 +32,13 @@ window.addEventListener('click', (event) => {
             toggleCartStatus();
 
             //пересчет общей стоимости товаров в корзине
-            calcCartPrice();
+            calcCartPriceAndDelivery();
         }
     }
 
     //проверяем клик на плюс или минус внутри корзины
     if (event.target.hasAttribute('data-action') && event.target.closest('.cart-wrapper')) {
         //пересчет общей стоимости товаров в корзине
-        calcCartPrice();
+        calcCartPriceAndDelivery();
     }
 });
