@@ -30,6 +30,15 @@ window.addEventListener('click', (event) => {
 
             //отображение статуса корзины: пустая / полная
             toggleCartStatus();
+
+            //пересчет общей стоимости товаров в корзине
+            calcCartPrice();
         }
+    }
+
+    //проверяем клик на плюс или минус внутри корзины
+    if (event.target.hasAttribute('data-action') && event.target.closest('.cart-wrapper')) {
+        //пересчет общей стоимости товаров в корзине
+        calcCartPrice();
     }
 });
