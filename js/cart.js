@@ -70,6 +70,6 @@ window.addEventListener('click', (event) => {
         toggleCartStatus();
 
         //пересчет общей стоимости товаров в корзине
-        calcCartPrice();
+        calcCartPriceAndDelivery();
     }
 });
