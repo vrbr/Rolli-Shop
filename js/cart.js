@@ -65,5 +65,8 @@ window.addEventListener('click', (event) => {
 
         //после добавления товара в корзину сбрасываем его счетчик
         card.querySelector('[data-counter]').innerText = '1';
+
+        //отображение статуса корзины: пустая / полная
+        toggleCartStatus();
     }
 });
